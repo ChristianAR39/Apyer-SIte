@@ -113,7 +113,7 @@ git init
 git add .
 git commit -m "Initial commit: APYER site"
 git branch -M main
-git remote add origin https://github.com/ChristianAR39/apyer-site.git
+git remote add origin https://github.com/ChristianAR39/Apyer-Site.git
 git push -u origin main
 DNS records to paste at your registrar
 nginx
