@@ -1,1 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>APYER — Past Works</title>
+  <meta name="description" content="Browse past works by APYER."/>
+  <link rel="icon" href="/assets/img/favicon.png"/>
+  <link rel="stylesheet" href="/assets/css/styles.css"/>
+  <script defer src="/assets/js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">APYER</a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul id="site-nav" class="nav">
+        <li><a class="is-active" href="/gallery.html">Past Works</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <header class="page-header">
+      <h1>Past Works</h1>
+      <div class="filters">
+        <select id="filter-series" aria-label="Filter by series">
+          <option value="all">All series</option>
+          <option value="Catharsis">Catharsis</option>
+          <option value="Anima">Anima</option>
+        </select>
+        <select id="filter-medium" aria-label="Filter by medium">
+          <option value="all">All media</option>
+          <option value="Oil">Oil</option>
+          <option value="Mixed media">Mixed media</option>
+          <option value="Digital">Digital</option>
+        </select>
+        <input id="search" type="search" placeholder="Search titles…" aria-label="Search titles">
+      </div>
+    </header>
+
+    <div class="grid gallery" id="gallery-grid" data-lightbox>
+      <noscript>Please enable JavaScript to view the gallery.</noscript>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-year></span> APYER.</p>
+  </footer>
+</body>
+</html>
