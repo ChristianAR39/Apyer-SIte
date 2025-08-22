@@ -117,12 +117,7 @@ git remote add origin https://github.com/ChristianAR39/Apyer-Site.git
 git push -u origin main
 DNS records to paste at your registrar
 nginx
-Copy code
-# APEX (apyer.com)
-A  @   185.199.108.153
-A  @   185.199.109.153
-A  @   185.199.110.153
-A  @   185.199.111.153
+
 
 # WWW
 CNAME  www   ChristianAR39.github.io
