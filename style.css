@@ -17,6 +17,15 @@ header, nav {
   background: #1a1a1a;
 }
 
+html, body { scroll-behavior: smooth; }
+.work-card.lightroom {
+  outline: 2px solid #666;
+  transform: scale(1.02);
+  transition: transform .2s ease, outline-color .2s ease;
+  position: relative;
+  z-index: 10;
+}
+
 #menu {
   display: none;
   position: absolute;
