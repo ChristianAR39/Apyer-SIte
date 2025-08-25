@@ -11,52 +11,72 @@
   <script src="script.js" defer></script>
 </head>
 
-<body class="container lg:text-xl lg:max-w-screen-lg lg:mx-auto">
-  <header class="flex justify-between items-center md:w-full md:fixed md:h-16 lg:max-w-screen-lg">
-    <!-- Mobile Nav Toggle -->
-    <a href="#menu"
-      id="home"
-      class="inline-block md:hidden py-4 px-6 appearance-none focus:outline-none">
-      <svg id="btn-hamburger" class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-      </svg>
-    </a>
-    <!-- Title -->
-    <a class="md:w-full py-4 px-6 md:py-0 text-3xl md:text-4xl" href="index.html"><span>APYER</span></a>
-    <!-- Navbar -->
-    <nav id="menu" class="container p-4 md:py-2">
-      <a href="#home"
-        id="menu-close"
-        class="absolute md:hidden top-0 right-0 p-6 z-20">
-        <svg  id="btn-close" class="fill-current h-5 w-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <time>Close</time>
-          <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-        </svg>
+<body class="bg-black text-white lg:text-xl lg:max-w-screen-2xl lg:mx-auto">
+  <header class="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-neutral-800">
+    <div class="mx-auto max-w-screen-2xl px-4 h-16 flex items-center justify-between">
+      <!-- Logo (LEFT) -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/works/ApyerLogo.png" alt="APYER" class="h-10 w-auto md:h-12">
       </a>
-      <!-- Desktop Menu -->
-        <ul class="min-h-full flex flex-col md:flex-row justify-around md:justify-end items-center relative z-10 py-12 md:py-0 text-3xl md:text-2xl">
-          <li class="px-4 hover:text-blue-400"><a href="#works">Works</a></li>
-          <li class="px-4 hover:text-blue-400"><a href="#profile">Profile</a></li>
-          <li class="px-4 hover:text-blue-400"><a href="mailto:ChristianARiley39@gmail.com" target="_blank">Contact</a></li>
-          <li id="theme-toggle" class="px-4"><svg class="fill-current h-6 w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10v-20zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z" /></svg></li>
+
+      <!-- Mobile toggle -->
+      <button id="nav-toggle" class="md:hidden p-2 rounded border border-neutral-700">
+        <svg class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 5h14M3 10h14M3 15h14"/>
+        </svg>
+      </button>
+
+      <!-- Nav (RIGHT) -->
+      <nav id="site-nav" class="hidden md:block">
+        <ul class="flex items-center gap-6 md:gap-8 uppercase tracking-widest text-sm">
+          <li><a class="hover:text-neutral-300" href="#home">Home</a></li>
+          <li><a class="hover:text-neutral-300" href="#works">Works</a></li>
+          <li><a class="hover:text-neutral-300" href="#profile">About</a></li>
+          <li class="pl-2 md:pl-4 border-l border-neutral-700/60">
+            <a class="hover:text-neutral-300" href="mailto:ChristianARiley39@gmail.com" target="_blank">Contact</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+
+    <!-- Mobile menu drawer -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-neutral-800">
+      <ul class="px-4 py-3 space-y-3 uppercase tracking-widest text-sm">
+        <li><a class="block hover:text-neutral-300" href="#home">Home</a></li>
+        <li><a class="block hover:text-neutral-300" href="#works">Works</a></li>
+        <li><a class="block hover:text-neutral-300" href="#profile">About</a></li>
+        <li><a class="block hover:text-neutral-300" href="mailto:ChristianARiley39@gmail.com" target="_blank">Contact</a></li>
+      </ul>
+    </div>
   </header>
-  <!-- works -->
   
+  <!-- works -->
+  <section id="works" class="mx-auto max-w-screen-2xl px-4 pt-10 md:pt-16">
+    <h2 class="sr-only">Works</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <a class="block group">
+        <div class="aspect-square rounded-lg border border-neutral-800 bg-neutral-950 group-hover:border-neutral-600 transition"></div>
+        <h3 class="mt-4 text-lg md:text-xl font-semibold">SUPERFLY [PRINT]</h3>
+        <p class="text-neutral-400">$25.00</p>
+      </a>
+      <a class="block group">
+        <div class="aspect-square rounded-lg border border-neutral-800 bg-neutral-950 group-hover:border-neutral-600 transition"></div>
+        <h3 class="mt-4 text-lg md:text-xl font-semibold">ENCOUNTER [PRINT]</h3>
+        <p class="text-neutral-400">$25.00</p>
+      </a>
+    </div>
+  </section>
+
   <!-- Artist Profile -->
-  <section id="profile">
-    <div class="container mx-auto px-4 py-8 lg:pt-12 lg:pb-24 text-center">
-      <h2 class="text-4xl font-bold mb-2">APYER</h2>
-      <!-- Socials -->
-      <div class="flex flex-wrap justify-center pt-8 pb-4">
-        <div class="w-16 h-16 flex justify-center items-center mx-4 border border-gray-400 rounded-full hover:border-blue-400 hover:text-blue-400">
-          <a href="https://instagram.com/chrstxvn" target="_blank"><i class="fa fa-instagram fa-2x pt-1"></i></a>
-        </div>
+  <section id="profile" class="mx-auto max-w-screen-2xl px-4 pt-16 pb-20 text-center">
+    <h2 class="text-4xl font-bold mb-2">APYER</h2>
+    <div class="flex flex-wrap justify-center pt-8 pb-4">
+      <div class="w-16 h-16 flex justify-center items-center mx-4 border border-gray-700 rounded-full hover:border-neutral-400 hover:text-neutral-300 transition">
+        <a href="https://instagram.com/chrstxvn" target="_blank"><i class="fa fa-instagram fa-2x pt-1"></i></a>
       </div>
     </div>
   </section>
+
   <!-- Footer -->
   <footer>
     <div class="container flex flex-col sm:flex-row sm:flex-wrap justify-between items-center mx-auto mb-6 px-4 text-sm">
