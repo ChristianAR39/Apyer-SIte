@@ -46,3 +46,20 @@ if (works) {
   works.addEventListener('click', toggleLightroom);
 }
 
+// Filter dropdown toggle
+const filterToggle = document.getElementById('filter-toggle');
+const filterMenu = document.getElementById('filter-menu');
+
+if (filterToggle && filterMenu) {
+  filterToggle.addEventListener('click', () => {
+    filterMenu.classList.toggle('hidden');
+  });
+
+  // Optional: close if clicking outside
+  window.addEventListener('click', (e) => {
+    if (!filterToggle.contains(e.target) && !filterMenu.contains(e.target)) {
+      filterMenu.classList.add('hidden');
+    }
+  });
+}
+
