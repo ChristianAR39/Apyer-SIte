@@ -52,8 +52,41 @@
       </div>
     </header>
     
-    <!-- works -->
-  
+    <!-- Works -->
+    <section id="works" class="mx-auto max-w-screen-2xl px-4 pt-10 md:pt-16">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+        <!-- Left: Heading -->
+        <h2 class="text-2xl font-semibold">All Products</h2>
+    
+        <!-- Right: Dropdown filter -->
+        <div class="relative mt-4 md:mt-0">
+          <button id="filter-toggle" class="flex items-center text-sm text-neutral-300 hover:text-white focus:outline-none">
+            <span id="filter-label">Most popular</span>
+            <svg class="ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l7 7 7-7" />
+            </svg>
+          </button>
+    
+          <!-- Dropdown -->
+          <div id="filter-menu" class="absolute right-0 mt-2 w-48 bg-black border border-neutral-700 rounded-md shadow-lg hidden">
+            <ul class="py-2 text-sm text-neutral-300">
+              <li><a href="#" class="block px-4 py-2 hover:bg-neutral-800">Most popular</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-neutral-800">Newest</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-neutral-800">Name (A–Z)</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-neutral-800">Name (Z–A)</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-neutral-800">Price (low to high)</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-neutral-800">Price (high to low)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Grid of products goes here -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- product cards -->
+      </div>
+    </section>
+        
     <!-- Artist Profile -->
     <section id="profile" class="mx-auto max-w-screen-2xl px-4 pt-16 pb-20 text-center">
       <h2 class="text-4xl font-bold mb-2">APYER</h2>
